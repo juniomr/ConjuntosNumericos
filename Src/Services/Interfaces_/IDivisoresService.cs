@@ -1,3 +1,5 @@
+using ConjuntosNumericos.Models;
+
 namespace ConjuntosNumericos.Services
 {
     /// <summary>
@@ -5,6 +7,18 @@ namespace ConjuntosNumericos.Services
     /// </summary>
     public interface IDivisoresService
     {
-        
+        /// <summary>
+        /// Obtem os divisores de um determinado número.
+        /// </summary>
+        /// <param name="numeroEntrada">Número de entrada</param>
+        /// <returns>Retorna o número de entrada e seus divisores.</returns>
+        NumerosDivisoresResponse ObterDivisores(long numeroEntrada);
+
+        /// <summary>
+        /// Obtem os divisores primos de um determinado número.
+        /// </summary>
+        /// <param name="numeroEntrada">Número de entrada</param>
+        /// <returns>Retorna o número de entrada e seus divisores primos.</returns>
+        NumerosDivisoresPrimosResponse ObterDivisoresPrimos(long numeroEntrada);
     }
 }
