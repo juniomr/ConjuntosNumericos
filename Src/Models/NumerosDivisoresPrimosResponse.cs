@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace ConjuntosNumericos.Models
 {
     /// <summary>
@@ -5,6 +7,19 @@ namespace ConjuntosNumericos.Models
     /// </summary>
     public class NumerosDivisoresPrimosResponse : Base
     {
-        
+        /// <summary>
+        /// Construtor que recebe o número de entrada e encaminha para a classe de herança.
+        /// </summary>
+        /// <param name="numeroEntrada">Número de entrada.</param>
+        public NumerosDivisoresPrimosResponse(long numeroEntrada)
+            : base(numeroEntrada)
+        {
+            DivisoresPrimos = new List<long>();
+        }
+
+        /// <summary>
+        /// Lista contendo os divisores primos.
+        /// </summary>
+        public List<long> DivisoresPrimos { get; set; }
     }
 }
