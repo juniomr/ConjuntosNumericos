@@ -1,25 +1,22 @@
-using System.Collections.Generic;
+namespace ConjuntosNumericos.Models;
 
-namespace ConjuntosNumericos.Models
+/// <summary>
+/// Entidade responsavel por representar os números divisores primos.
+/// </summary>
+public class NumerosDivisoresPrimosResponse : Base
 {
     /// <summary>
-    /// Entidade responsavel por representar os números divisores primos.
+    /// Construtor que recebe o número de entrada e encaminha para a classe de herança.
     /// </summary>
-    public class NumerosDivisoresPrimosResponse : Base
+    /// <param name="numeroEntrada">Número de entrada.</param>
+    public NumerosDivisoresPrimosResponse(long numeroEntrada)
+        : base(numeroEntrada)
     {
-        /// <summary>
-        /// Construtor que recebe o número de entrada e encaminha para a classe de herança.
-        /// </summary>
-        /// <param name="numeroEntrada">Número de entrada.</param>
-        public NumerosDivisoresPrimosResponse(long numeroEntrada)
-            : base(numeroEntrada)
-        {
-            DivisoresPrimos = new List<long>();
-        }
-
-        /// <summary>
-        /// Lista contendo os divisores primos.
-        /// </summary>
-        public List<long> DivisoresPrimos { get; set; }
+        DivisoresPrimos = new List<long>();
     }
+
+    /// <summary>
+    /// Lista contendo os divisores primos.
+    /// </summary>
+    public List<long> DivisoresPrimos { get; set; }
 }

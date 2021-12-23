@@ -1,18 +1,17 @@
-namespace ConjuntosNumericos.Models
+namespace ConjuntosNumericos.Models;
+
+/// <summary>
+/// Entidade responsavel por representar os erros ocorridos na aplicação.
+/// </summary>
+public class ErroResponse
 {
     /// <summary>
-    /// Entidade responsavel por representar os erros ocorridos na aplicação.
+    /// Título do erro ocorrido.
     /// </summary>
-    public class ErroResponse
-    {
-        /// <summary>
-        /// Título do erro ocorrido.
-        /// </summary>
-        public string? Titulo { get; set; }
+    public string? Titulo { get; set; }
 
-        /// <summary>
-        /// Descrição do erro ocorrido.
-        /// </summary>
-        public string? Descricao { get; set; } 
-    }
+    /// <summary>
+    /// Descrição do erro ocorrido.
+    /// </summary>
+    public string? Descricao { get; set; }
 }

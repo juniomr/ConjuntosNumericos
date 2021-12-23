@@ -1,4 +1,3 @@
-using System;
 using ConjuntosNumericos.Models;
 using ConjuntosNumericos.Services;
 using Microsoft.AspNetCore.Mvc;

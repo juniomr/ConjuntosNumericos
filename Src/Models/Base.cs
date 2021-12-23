@@ -1,22 +1,21 @@
-namespace ConjuntosNumericos.Models
+namespace ConjuntosNumericos.Models;
+
+/// <summary>
+/// Representa a entidade base da aplicação.
+/// </summary>
+public class Base
 {
     /// <summary>
-    /// Representa a entidade base da aplicação.
+    /// Construtor que recebe o número de entrada.
     /// </summary>
-    public class Base
+    /// <param name="numeroEntrada"></param>
+    public Base(long numeroEntrada)
     {
-       /// <summary>
-        /// Construtor que recebe o número de entrada.
-        /// </summary>
-        /// <param name="numeroEntrada"></param>
-        public Base(long numeroEntrada)
-        {
-            NumeroEntrada = numeroEntrada;
-        }
-
-        /// <summary>
-        /// Número de entrada informado pelo client da aplicação.
-        /// </summary>
-        public long NumeroEntrada { get; set; } 
+        NumeroEntrada = numeroEntrada;
     }
+
+    /// <summary>
+    /// Número de entrada informado pelo client da aplicação.
+    /// </summary>
+    public long NumeroEntrada { get; set; }
 }
